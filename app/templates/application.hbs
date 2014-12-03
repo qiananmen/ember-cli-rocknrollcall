@@ -1,3 +1,39 @@
-<h2 id='title'>Welcome to Ember.js</h2>
-
-{{outlet}}
+<div class="wrapper">
+  <div class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand">Rock'n'Roll Call</a>
+    </div>
+    <div id="navbar-collapse-1" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav search-lockup">
+        <li class="search-group">
+          <input class="search-input" placeholder="Search for artists or song names">
+          <button class="btn btn-primary">
+            <i class="glyphicon glyphicon-play"></i>
+          </button>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Activity</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      {{outlet}}
+    </div>
+  </div>
+</div>
+<footer>
+  <p>
+    <i class="glyphicon glyphicon-copyright-mark"></i> 2013 Companion to O'Reilly's <em>Building Web Apps with Ember.js: Write Ambitious Javascript</em> <a href="http://twitter.com/emberbook">@emberbook</a>
+  </p>
+  <p>
+    Authors: Jesse Cravens <a href="http://twitter.com/jdcravens">@jdcravens</a> and Thomas Q. Brady <a href="http://twitter.com/thomasqbrady">@thomasqbrady</a>
+  </p>
+</footer>
